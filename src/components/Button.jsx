@@ -25,6 +25,8 @@ const Button = ({ children, type = "yellow", padding, className, color }) => {
           : type == "transparent"
           ? "var(--colorWhite)"
           : "var(--colorBlack)",
+          cursor:"pointer",
+          height:"fit-content"
       }}
     >
       {children}

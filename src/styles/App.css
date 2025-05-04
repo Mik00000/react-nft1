@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 *,
 *::before,
 *::after {
@@ -80,8 +81,12 @@ select {
 :root {
   --colorWhite: #fff;
   --colorBlack: #000;
-  --colorYellow: #FFCE4E;
+  --colorYellow: #ffce4e;
   --colorYellowTransparent: rgba(233, 215, 168, 0.1019607843);
+  --colorBackgroundBlack: #1c121f;
+  --colorMintWhite: colorMintWhite;
+  --fontWorkSans: $fontWorkSans;
+  --fontOxanium: $fontOxanium;
 }
 
 header {
@@ -91,6 +96,8 @@ header {
   padding: 37px 80px;
   position: fixed;
   width: 100vw;
+  z-index: 10;
+  top: 0;
 }
 header .logo {
   width: 66px;
@@ -109,6 +116,7 @@ header nav.header-menu .header-menu-item {
   letter-spacing: 0.02em;
   transition: color 0.3s ease-in-out;
   padding: 8px 6px;
+  color: #fff;
 }
 header nav.header-menu .header-menu-item::after {
   content: "";
@@ -117,11 +125,11 @@ header nav.header-menu .header-menu-item::after {
   bottom: 0;
   height: 2px;
   width: 0;
-  background-color: #FFCE4E;
+  background-color: #ffce4e;
   transition: width 0.3s ease-in-out;
 }
 header nav.header-menu .header-menu-item:hover {
-  color: #FFCE4E;
+  color: #ffce4e;
 }
 header nav.header-menu .header-menu-item:hover::after {
   width: 100%;
@@ -129,4 +137,74 @@ header nav.header-menu .header-menu-item:hover::after {
 header .btn {
   font-weight: 600;
   font-size: 18px;
+}
+
+.hero {
+  display: flex;
+  width: 100%;
+  padding-left: 60px;
+}
+.hero .left-part {
+  margin-top: 242px;
+  padding: 32px 40px 0 20px;
+  flex: 1;
+}
+.hero .left-part .main-content {
+  margin-bottom: 121px;
+}
+.hero .left-part .main-content .heading {
+  font-family: "Oxanium", sans-serif;
+  font-weight: 700;
+  font-size: 85px;
+  color: #F5FBF2;
+  margin-bottom: 77px;
+}
+.hero .left-part .main-content .heading span {
+  color: #ffce4e;
+}
+.hero .left-part .main-content .buttons {
+  display: flex;
+  gap: 48px;
+}
+.hero .left-part .main-content .buttons .btn {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  color: #000;
+}
+.hero .left-part .statistics {
+  display: flex;
+  width: 100%;
+  padding-right: 30px;
+  justify-content: space-between;
+}
+.hero .left-part .statistics .card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.hero .left-part .statistics .card h4 {
+  font-family: "Oxanium", sans-serif;
+  font-weight: 700;
+  font-size: 62px;
+  color: #f5fbf2;
+  line-height: 100%;
+}
+.hero .left-part .statistics .card span {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #9b9e9a;
+}
+.hero .right-part {
+  flex: 1;
+  height: 1063px;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  background: rgba(79, 70, 78, 0.4509803922);
+  padding: 240px 0 100px 60px;
+}
+.App, body {
+  min-height: 100vh;
+  background-color: #1c121f;
 }/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,77 @@
+.hero {
+  // margin-top: 242px;
+  display: flex;
+  width: 100%;
+  padding-left: 60px;
+  .left-part {
+    margin-top: 242px;
+    padding: 32px 40px 0 20px;
+    flex: 1;
+    .main-content {
+      margin-bottom: 121px;
+      .heading {
+        font-family: $fontOxanium;
+        font-weight: 700;
+        font-size: 85px;
+        color: $colorMintWhite;
+        margin-bottom: 77px;
+        span {
+          color: $colorYellow;
+        }
+      }
+      .buttons {
+        display: flex;
+        gap: 48px;
+        .btn {
+          font-family: $fontWorkSans;
+          font-weight: 600;
+          font-size: 28px;
+          color: $colorBlack;
+        }
+      }
+    }
+    .statistics {
+      display: flex;
+      width: 100%;
+      padding-right: 30px;
+      justify-content: space-between;
+      .card {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        h4 {
+          font-family: $fontOxanium;
+          font-weight: 700;
+          font-size: 62px;
+          color: #f5fbf2;
+          line-height: 100%;
+        }
+        span {
+          font-family: $fontWorkSans;
+          font-weight: 400;
+          font-size: 24px;
+          color: #9b9e9a;
+        }
+      }
+    }
+  }
+  .right-part {
+    flex: 1;
+    height: 1063px;
+    backdrop-filter: blur(30px);
+    background: #4f464e73;
+    padding: 240px 0 100px 60px;
+    .nft-card {
+      .top-part {
+        .info-block {
+        }
+        .info-block {
+        }
+      }
+      .bottom-part {
+        .artist {
+        }
+      }
+    }
+  }
+}

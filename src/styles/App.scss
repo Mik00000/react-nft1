@@ -1,2 +1,9 @@
 @import "Base";
 @import "../elements/Header";
+@import "../elements/Hero";
+
+
+.App, body{
+    min-height: 100vh;
+    background-color: $colorBackgroundBlack;
+}

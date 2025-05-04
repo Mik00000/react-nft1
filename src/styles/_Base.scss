@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 *,
 *::before,
 *::after {
@@ -76,15 +78,23 @@ select {
   }
 }
 
-
-
 $colorWhite: #fff;
+$colorMintWhite:#F5FBF2;
 $colorBlack: #000;
-$colorYellow: #FFCE4E;
+$colorYellow: #ffce4e;
 $colorYellowTransparent: #e9d7a81a;
-:root{
+$colorBackgroundBlack: #1c121f;
+
+$fontWorkSans: "Work Sans", sans-serif;
+$fontOxanium: "Oxanium", sans-serif;
+:root {
   --colorWhite: #{$colorWhite};
   --colorBlack: #{$colorBlack};
   --colorYellow: #{$colorYellow};
   --colorYellowTransparent: #{$colorYellowTransparent};
+  --colorBackgroundBlack: #{$colorBackgroundBlack};
+  --colorMintWhite: #{colorMintWhite};
+  
+  --fontWorkSans: $fontWorkSans;
+  --fontOxanium: $fontOxanium;
 }
