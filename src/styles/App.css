@@ -298,6 +298,9 @@ header .btn {
   color: #f5fbf2;
   position: relative;
   z-index: 1;
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .heading-with-bubble::before {
   content: "";

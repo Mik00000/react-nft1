@@ -1,0 +1,42 @@
+section.auctions {
+    heading {
+    }
+    carousel {
+      div.carousel-card {
+        div.image-wrapper {
+          img.nft-image {
+          }
+          span.nft-timer {
+          }
+        }
+        div.info {
+          div.author {
+            img.author-image {
+            }
+            div.author-info {
+              span.author-name {
+              }
+              span.author-username {
+              }
+            }
+          }
+          div.likes {
+            button.like-button {
+              img.heart-icon {
+              }
+            }
+            span.likes-count {
+            }
+          }
+        }
+        div.price {
+          span {
+          }
+          span.price-value {
+          }
+        }
+        button {
+        }
+      }
+    }
+  }
