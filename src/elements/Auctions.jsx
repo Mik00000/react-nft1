@@ -11,6 +11,7 @@ import heartIcon from "../assets/images/icons/heart-icon.svg";
 import carouselArrow from "../assets/images/icons/carousel-arrow.svg";
 import userImage from "../assets/images/icons/profile-image1.png";
 import Button from "../components/Button";
+import nftCardTimerBg from "../assets/images/banners/nft-card-timer-bg.svg";
 const Auctions = () => {
   return (
     <section className="auctions">
@@ -28,7 +29,7 @@ const Auctions = () => {
           <div className="carousel-card">
             <div className="image-wrapper">
               <img src={nftImage1} alt="nft" className="nft-image" />
-              <span className="nft-timer">03:18:24</span>
+                <span className="nft-timer" style={{backgroundImage:`url(${nftCardTimerBg})`}}>03:18:24</span>
             </div>
             <div className="info">
               <div className="author">
@@ -46,7 +47,7 @@ const Auctions = () => {
                 <button className="like-button">
                   <img
                     src={heartIcon}
-                    alt="heart-icon"  
+                    alt="heart-icon"
                     className="heart-icon"
                   />
                 </button>
@@ -57,7 +58,13 @@ const Auctions = () => {
               <span>Current Bid</span>
               <span className="price-value">4.89 ETH</span>
             </div>
-            <Button type="transparent" padding="21px 0" color="var(--colorWhite)">Place a bid</Button>
+            <Button
+              type="transparent"
+              padding="21px 0"
+              color="var(--colorWhite)"
+            >
+              Place a bid
+            </Button>
           </div>
         </Carousel.Slide>
       </Carousel>

@@ -316,6 +316,46 @@ header .btn {
   left: -40px;
 }
 
+section.auctions {
+  margin-bottom: 82px;
+}
+section.auctions .heading-with-bubble {
+  margin-bottom: 84px;
+}
+section.auctions .mantine-Carousel-root {
+  padding-left: 80px;
+}
+section.auctions .mantine-Carousel-root .mantine-Carousel-container .mantine-Carousel-slide .carousel-card {
+  background: #3d2942;
+  width: 495px;
+  height: 100%;
+  padding: 32px 32px 28px 32px;
+}
+section.auctions .mantine-Carousel-root .mantine-Carousel-container .mantine-Carousel-slide .carousel-card .image-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 28px;
+}
+section.auctions .mantine-Carousel-root .mantine-Carousel-container .mantine-Carousel-slide .carousel-card .image-wrapper .nft-image {
+  width: 100%;
+}
+section.auctions .mantine-Carousel-root .mantine-Carousel-container .mantine-Carousel-slide .carousel-card .image-wrapper .nft-timer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 194px;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.auctions .mantine-Carousel-root .mantine-Carousel-container .mantine-Carousel-slide .carousel-card .info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
 .App, body {
   min-height: 100vh;
   background-color: #1c121f;

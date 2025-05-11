@@ -1,42 +1,70 @@
 section.auctions {
-    heading {
-    }
-    carousel {
-      div.carousel-card {
-        div.image-wrapper {
-          img.nft-image {
-          }
-          span.nft-timer {
-          }
-        }
-        div.info {
-          div.author {
-            img.author-image {
+  margin-bottom: 82px;
+  .heading-with-bubble{
+    margin-bottom: 84px;
+  }
+  .mantine-Carousel-root {
+    padding-left: 80px;
+    .mantine-Carousel-container {
+      .mantine-Carousel-slide {
+        .carousel-card {
+          background: #3d2942;
+          width: 495px;
+          height: 100%;
+          padding: 32px 32px 28px 32px;
+          .image-wrapper {
+            position: relative;
+            width: 100%;
+            margin-bottom: 28px;
+            .nft-image {
+                width: 100%;
             }
-            div.author-info {
-              span.author-name {
+            .nft-timer {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 194px;
+              height: 66px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+          .info {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 28px;
+            .author {
+              img.author-image {
               }
-              span.author-username {
+              .author-info {
+                .author-name {
+                }
+                .author-username {
+                }
+              }
+            }
+            .likes {
+              .like-button {
+                .heart-icon {
+                }
+              }
+              .likes-count {
               }
             }
           }
-          div.likes {
-            button.like-button {
-              img.heart-icon {
-              }
+          .price {
+            span {
             }
-            span.likes-count {
+            .price-value {
             }
           }
-        }
-        div.price {
-          span {
+          .btn {
           }
-          span.price-value {
-          }
-        }
-        button {
         }
       }
     }
   }
+}
