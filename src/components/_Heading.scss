@@ -1,0 +1,22 @@
+.heading-with-bubble {
+  font-family: $fontOxanium;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100%;
+  color: #f5fbf2;
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: "";
+    display: block;
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    background-color: var(--bubble-color);
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -40px;
+  }
+}
